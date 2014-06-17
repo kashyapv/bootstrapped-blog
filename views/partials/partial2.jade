@@ -1,0 +1,20 @@
+.row
+  .col-lg-7
+    p This is the partial for view 2.
+    h2 Write a new post
+    label(for='title') Title: 
+    p
+      input(ng-model='form.title', name='title').form-control
+    label(for='author') Author:
+    p
+      input(ng-model='form.author', name='author').form-control
+    label(for='body') Body:
+    textarea(ng-model='form.text', rows='8').form-control
+    p
+    p
+      button(ng-click='submitPost()').btn.btn-primary Submit Post
+  .col-lg-1
+  .col-lg-4
+    h2 Sidebar
+    p
+    | text in a sidebar
