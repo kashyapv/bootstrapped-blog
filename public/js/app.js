@@ -10,7 +10,7 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives','
       	controller: IndexCtrl
       }).
       when('/addPost', {
-      	templateURL: 'partials/addPost',
+      	templateUrl: 'partials/addPost',
       	controller: AddPostCtrl
       }).
       when('/readPost/:id', {

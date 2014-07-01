@@ -1,12 +1,13 @@
 .row
   .col-lg-7
-		h2 {{post.title}}
-		div {{post.text}}
-		p
-		  | Are you sure you want to delete this post? 
-		  button(ng-click='deletePost()') Yes
-		  |  - 
-		  button(ng-click='home()') No thanks
+    h2 {{post.title}}
+    div {{post.text}}
+    div
+      | Are you sure you want to delete this post?
+    p 
+      .btn-group.btn-group-sm
+        button(ng-click='deletePost()').btn.btn-default Yes
+        button(ng-click='home()').btn.btn-default No Thanks
   .col-lg-1
   .col-lg-4
     h2 Sidebar

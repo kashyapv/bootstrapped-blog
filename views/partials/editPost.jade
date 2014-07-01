@@ -1,15 +1,18 @@
 .row
   .col-lg-7
-		h2 Edit post
-		label(for='title') Title: 
-		input(ng-model='form.title', name='title')
-		p Body:
-		textarea(ng-model='form.text', cols='50', rows='15')
-		p
-		  button(ng-click='editPost()') Edit Post
+    h2 Edit post
+    label(for='title') Title: 
+    input(ng-model='form.title', name='title').form-control
+
+    label(for='body') Body:
+    textarea(ng-model='form.text', cols='50', rows='15').form-control
+    p
+      .btn-group.btn-group
+        button(ng-click='editPost()').btn.btn-default Edit Post
+        a(href='/').btn.btn-default Back
   .col-lg-1
   .col-lg-4
     h2 Sidebar
     p
-    | text in a sidebar
+    | Text in a sidebar
 

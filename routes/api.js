@@ -34,7 +34,7 @@ exports.posts = function (req, res) {
       id: i,
       title: post.title,
       author: post.author,
-      text: post.text.substr(0, 50) + '...'
+      text: post.text.substr(0, 80) + '...'
     });
   });
   res.json({
