@@ -2,12 +2,6 @@
  * Serve JSON to our AngularJS client
  */
 
-exports.name = function (req, res) {
-  res.json({
-  	name: 'World'
-  });
-};
-
 // For a real app, you'd make database requests here.
 // For this example, "data" acts like an in-memory "database"
 var data = {

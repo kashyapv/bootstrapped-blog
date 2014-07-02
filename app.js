@@ -36,16 +36,12 @@ if (app.get('env') === 'production') {
   // TODO
 }; 
 
-
-
 // Routes
 app.get('/', routes.index);
 app.get('/partials/:name', routes.partials);
 
 // JSON API
-app.get('/api/name', api.name);
 app.get('/api/posts', api.posts);
-
 app.get('/api/post/:id', api.post);
 app.post('/api/post', api.addPost);
 app.put('/api/post/:id', api.editPost);
